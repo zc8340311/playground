@@ -3,4 +3,4 @@
 
 Python practise
 
-  * [links too](https://anandology.com/python-practice-book/index.html)
+  * [python practise book](https://anandology.com/python-practice-book/index.html)
