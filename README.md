@@ -1,4 +1,4 @@
-## Playground, early stage work things 
+## Playground, early stage work 
 
 ### Readings and 
 
@@ -10,6 +10,7 @@ Deep Learning
     
   * [Reinforcement learning: basic](http://kvfrans.com/reinforcement-learning-basics/)
   * [VAE explain](http://kvfrans.com/variational-autoencoders-explained/)
+  * [High-Level Explanation of Variational Inference](https://www.cs.jhu.edu/~jason/tutorials/variational.html)
   
   
 ### Implementation
@@ -17,7 +18,7 @@ Deep Learning
 Current List
 
   * LSTM-based Autoencoder
-  * RNN & Bi-RNN &Dynamic RNN 
+  * RNN & Bi-RNN & Dynamic RNN 
 
 Plan:
 
