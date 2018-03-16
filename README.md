@@ -27,4 +27,5 @@ Plan:
   * VAE
   * Convolutional Autoencoder (next)
   * LSTM + laplasian decomposition
+  * [A security Repo](http://clicksecurity.github.io/data_hacking/)
   
