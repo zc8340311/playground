@@ -1,0 +1,70 @@
+Changes you need to make to downloaded rules
+
+--------------------------------------------------
+1)  Get rid of the reputation manager stuff.
+
+108,110c108,110
+< # # If you are using reputation preprocessor set these
+< # var WHITE_LIST_PATH ../rules
+< # var BLACK_LIST_PATH ../rules
+---
+> # If you are using reputation preprocessor set these
+> var WHITE_LIST_PATH ../rules
+> var BLACK_LIST_PATH ../rules
+504,510c501,507
+< # # Reputation preprocessor. For more information see README.reputation
+< # preprocessor reputation: \
+< #    memcap 500, \
+< #    priority whitelist, \
+< #    nested_ip inner, \
+< #    whitelist $WHITE_LIST_PATH/white_list.rules, \
+< #    blacklist $BLACK_LIST_PATH/black_list.rules 
+---
+> # Reputation preprocessor. For more information see README.reputation
+> preprocessor reputation: \
+>    memcap 500, \
+>    priority whitelist, \
+>    nested_ip inner, \
+>    whitelist $WHITE_LIST_PATH/white_list.rules, \
+>    blacklist $BLACK_LIST_PATH/black_list.rules 
+
+--------------------------------------------------
+2) Change the directory for the dynamic libraries
+
+243,244c243
+< #dynamicpreprocessor directory /usr/local/lib/snort_dynamicpreprocessor/
+< dynamicpreprocessor directory /usr/lib/snort_dynamicpreprocessor/
+---
+> dynamicpreprocessor directory /usr/local/lib/snort_dynamicpreprocessor/
+247,248c246
+< #dynamicengine /usr/local/lib/snort_dynamicengine/libsf_engine.so
+< dynamicengine /usr/lib/snort_dynamicengine/libsf_engine.so
+---
+> dynamicengine /usr/local/lib/snort_dynamicengine/libsf_engine.so
+251,252c249
+< #dynamicdetection directory /usr/local/lib/snort_dynamicrules
+< dynamicdetection directory /usr/lib/snort_dynamicrules
+---
+> dynamicdetection directory /usr/local/lib/snort_dynamicrules
+
+--------------------------------------------------
+3) Add my output plugins.
+
+530,531d526
+< 
+< output alert_csv: snort.csv
+
+output unified2: filename unified2.log
+
+--------------------------------------------------
+4) Copy the precompiled rules.
+
+cd so_rules
+cp precompiled/Ubuntu-12-04/x86-64/*.so .
+
+--------------------------------------------------
+5) Add my own rules.
+
+alert tcp  any any -> any any (sid:1000001; rev:1; msg:"TCP";)
+alert udp  any any -> any any (sid:1000002; rev:1; msg:"UDP";)
+
