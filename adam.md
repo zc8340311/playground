@@ -1,12 +1,10 @@
 ## Adam( adaptive moment estimation)
 [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980)
 
-[Adam slides]
-(https://moodle2.cs.huji.ac.il/nu15/pluginfile.php/316969/mod_resource/content/1/adam_pres.pdf)
+[Adam slides](https://moodle2.cs.huji.ac.il/nu15/pluginfile.php/316969/mod_resource/content/1/adam_pres.pdf)
 
 This Nots is closely following Dr. Brownlee's blog: 
-[Gentle Introduction to the Adam Optimization Algorithm for Deep Learning]
-(https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/)
+[Gentle Introduction to the Adam Optimization Algorithm for Deep Learning](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/)
 
 * an algorithm for first-order gradient based optimization of stochastic objective functions, 
 based on adaptive estimates of lower order moments.
