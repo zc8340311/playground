@@ -11,7 +11,8 @@ Deep Learning
   * [Reinforcement learning: basic](http://kvfrans.com/reinforcement-learning-basics/)
   * [VAE explain](http://kvfrans.com/variational-autoencoders-explained/)
   * [High-Level Explanation of Variational Inference](https://www.cs.jhu.edu/~jason/tutorials/variational.html)
-  
+### Notes
+  * Adam Optimizer Notes [Adam](adam.md)
   
 ### Implementation
 
@@ -28,4 +29,5 @@ Plan:
   * Convolutional Autoencoder (next)
   * LSTM + laplasian decomposition
   * [A security Repo](http://clicksecurity.github.io/data_hacking/)
+  
   
