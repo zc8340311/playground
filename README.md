@@ -1,6 +1,6 @@
 ## Playground, early stage work 
 
-### Readings and 
+### Readings and excise
 
 Python practise
 
